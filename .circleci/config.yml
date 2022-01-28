@@ -26,7 +26,7 @@ jobs: # a collection of steps
 
       - run:
           name: Bundle Install
-          command: |
+          command: bundle check || bundle install
             gem update --system
             gem install bundler
 
